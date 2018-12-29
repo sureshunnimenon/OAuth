@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OAuth playing around</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            font-family: arial;
+            margin: 0
+        }
+
+        nav {
+            background: #ff5353;
+            padding: 20px 10px;
+        }
+
+        nav ul {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        nav li {
+            list-style-type: none;
+            display: inline-block;
+            margin: 0 10px 0 0;
+        }
+
+        nav a {
+            color: #fff;
+            font-size: 18px;
+            background: rgb(255,255,255,0.2);
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+    
+        }
+    
+    </style>
+        
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li> <a href="/"> Home page </a></li>
+            <!-- <li><a href="/auth/logout"> Logout </a></li>
+            <li><a href="/auth/login"> Login </a></li> -->
+
+            <!-- if user exists, dont show login button -->
+            <% if(user) {  %>
+                <li><a href="/auth/logout"> Logout </a></li>
+            <% } else { %>
+                <li><a href="/auth/login"> Login </a></li>
+            <% } %>
+            <li><a href="/profile"> Profile </a></li>
+            
+        </ul>
+    </nav>
+
+    <header>
+        <h1> OAuth tutorials- play around </h1>
+        <h2> Home page </h2>
+        <h4> enjoy!</h4>
+    </header>
+
+    <main>
+        <p> The best tutorials on the OAuth!! by exbeyond!  </p>
+        <p> Please stay tuned</p>
+    </main>
+</body>
+</html>
